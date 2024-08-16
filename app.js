@@ -24,6 +24,8 @@ const User = require("./models/user.js");
 // const {reviewSchema} = require("./schema.js");
 // const Review = require("./models/reviews.js");
 
+const dbUrl = process.env.ATLAS_DB;
+
 const store = MongoStore.create({
     mongoUrl:  dbUrl,
     crypto:{
@@ -84,7 +86,7 @@ app.use(express.static(path.join(__dirname,"/public")));
 
 
 // const Mongo_URL = "mongodb://127.0.0.1:27017/wanderlust";
-const dbUrl = process.env.ATLAS_DB;
+
 
 main().then(res =>{
     console.log("Connected to WanderLust");
