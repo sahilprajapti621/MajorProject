@@ -6,7 +6,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" href="/listings">Explore</a>
+        <a class="nav-link bg-white-expand" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" href="/listings">Explore</a>
       </div>
 
       <div class="navbar-nav ms-auto d-none d-md-flex">
@@ -21,14 +21,14 @@
       </div>
 
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">Add yours</a>        
+        <a class="nav-link bg-white-expand" href="/listings/new">Add yours</a>        
         <% if (!currUser) { %>
-          <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" href="/signup"><b>SignUp</b></a>
-          <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" href="/login"><b>LogIn</b></a>
+          <a class="nav-link bg-white-expand" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" href="/signup"><b>SignUp</b></a>
+          <a class="nav-link bg-white-expand" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" href="/login"><b>LogIn</b></a>
         <% } %>
 
         <% if (currUser) { %>
-          <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" href="/logout"><b>LogOut</b></a>        
+          <a class="nav-link bg-white-expand" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" href="/logout"><b>LogOut</b></a>        
         <% } %>
 
         

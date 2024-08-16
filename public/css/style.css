@@ -84,4 +84,5 @@ body{
 #map { 
     height: 400px;
     width: 80vw;
+    margin: 2rem;
  }
